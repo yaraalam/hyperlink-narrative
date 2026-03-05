@@ -1,25 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Impostor</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The Imposter</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{
+    background: radial-gradient(circle at top, #2b2121, #000000);
+    color:#e6dada;
+    font-family: "Courier New", monospace;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+/* TEXT CONTAINER */
+
+.text-box{
+    max-width:650px;
+    text-align:left;
+}
+
+/* GLITCH TITLE */
+
+.glitch{
+    font-size:2.5rem;
+    font-weight:bold;
+    position:relative;
+    color:#050505;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch{
+    0%{text-shadow:2px 2px #522f5d;}
+    20%{text-shadow:-2px -2px #ffffff;}
+    40%{text-shadow:2px -2px #633466;}
+    60%{text-shadow:-2px 2px #ffffff;}
+    80%{text-shadow:1px 1px #3e1b43;}
+    100%{text-shadow:0px 0px #ffffff;}
+}
+
+/* FLICKER TEXT */
+
+.flicker{
+    animation:flicker 3s infinite;
+}
+
+@keyframes flicker{
+    0%,18%,22%,25%,53%,57%,100%{
+        opacity:1;
+    }
+    20%,24%,55%{
+        opacity:.3;
+    }
+}
+
+/* DRIFTING WORD */
+
+.drift{
+    display:inline-block;
+    animation: drift 6s ease-in-out infinite;
+}
+
+@keyframes drift{
+    0%{transform:translateX(0px);}
+    50%{transform:translateX(6px);}
+    100%{transform:translateX(0px);}
+}
+
+/* LINK STYLE */
+
+a{
+    color:#c88c8c;
+    text-decoration:none;
+    border-bottom:1px dashed #c88c8c;
+    transition:.3s;
+}
+
+a:hover{
+    color:#ffffff;
+    text-shadow:0 0 10px #ff4d4d;
+}
+
+/* BACK LINK */
+
+.back{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:.9rem;
+}
+
+</style>
 </head>
 <body>
+<div class="text-box">
 
-<h1>The Impostor</h1>
+<h1 class="glitch mb-4">The Imposter</h1>
+
+<p class="flicker">
+if you follow the threads long enough, they all seem to end here. </p>
 
 <p>
-If you look closely enough, you’ll see I am performing.<br>
-Not lying.<br>
-Just adjusting. <br>
-Always adjusting.
+sometimes it feels like everyone else knows something  
+i’m still <span class="drift">pretending</span> to understand.
 </p>
 
 <p>
-I’ve become very good at giving people the version of me that makes sense to them.
+and if you look closely enough, you’ll see i am performing.<br>
+not lying.<br>
+just adjusting. <br>
+always adjusting.
+</p>
+
+<p>each version of me makes sense on its own.</p>
+<p>none of them are false.</p>
+
+<p>
+but sometimes i wonder if i’ve gotten too good at arranging them. <br>
+i’ve become very good at giving people the version of me that makes sense to them.
 </p>
 
 <p>
-Sometimes I forget which version feels like mine.
+sometimes i forget which version feels like mine.
 </p>
 
 <p>

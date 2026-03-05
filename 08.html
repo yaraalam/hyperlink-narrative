@@ -2,15 +2,80 @@
 <html>
 <head>
     <title>The Fear of Falling Behind</title>
+    <!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    background: radial-gradient(circle at 40% 20%, #1a0a0f 0%, #0a0a0f 75%);
+    color:#f4e9d8;
+    min-height:100vh;
+}
+
+/* center the narrative column */
+.story-container{
+    max-width:700px;
+    margin:auto;
+    padding-top:120px;
+}
+
+/* titles */
+h1{
+    color:#c6a75e;
+    letter-spacing:2px;
+    margin-bottom:50px;
+    font-weight:500;
+}
+
+/* paragraphs */
+p{
+    font-size:1.25rem;
+    line-height:2;
+}
+
+/* links */
+a{
+    color:#8b1e2d;
+    text-decoration:none;
+    border-bottom:1px solid #8b1e2d;
+    transition:.3s;
+}
+
+a:hover{
+    color:#c6a75e;
+    border-bottom:1px solid #c6a75e;
+}
+
+/* subtle fade in */
+.story-container{
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
 </head>
+
 <body>
+
+<div class="container story-container">
+<div class="row">
+<div class="col">
 
 <h1>The Fear of Falling Behind</h1>
 
 <p>
 I measure myself against invisible timelines.<br>
-Where I should be.<br>
-Who is already there.
+Where I <a href="08.html">should be.</a><br>
+<a href="09.html">Who is already there.</a>
 </p>
 
 <p>
